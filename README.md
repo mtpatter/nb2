@@ -17,7 +17,8 @@ Install this R package using devtools.
 ## Usage
 
 Load as any other R module to access sample data and functions.
-``` library(nb2)
+``` 
+  library(nb2)
 ```
 
 See `example.R` for sample code running the nb2 algorithm on sample census data by county.
