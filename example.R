@@ -1,7 +1,7 @@
 require(reshape)
 require(plyr)
 require(parallel) 
-
+library(nb2)
 # Given a dataframe of (age + gender adjusted person year rates) values by 
 # county fipscode in the US, this code shows an example for running 
 # the nb2 algorithm and outputs various statistics for each value.
