@@ -1,0 +1,8 @@
+Package: nb2
+Title: Neighbor Based Bootstrapping
+Version: 0.0.0.9000
+Authors@R: person("Maria", "Patterson", email = "mtpatter@uchicago.edu", role = c("aut", "cre"))
+Description: Bootstrapping method to assess if a variable (for example, disease rate) associated with an entity (county) can be well estimated by that variable from neighboring entities.  Used to detect spatial (or other neighbor relation) distributions that are non-random.
+Depends: R (>= 3.2.1)
+License: What license is it under?
+LazyData: true
