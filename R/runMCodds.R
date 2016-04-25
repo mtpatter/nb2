@@ -1,5 +1,5 @@
-runMCodds <- function(value) {
-        mcresults <- Reduce(merge.all,mclapply(Nnum,code=value,rates_counties=rates_counties,drawNeighborsOdds,mc.cores=detectCores()))
+runMCodds <- function(values) {
+        mcresults <- Reduce(merge.all,mclapply(Nnum,code=values,rates_counties=rates_counties,drawNeighborsOdds,mc.cores=detectCores()))
         #neighbor.actual.02 <- format(quantile(mcresults$neighbor.actual,0.02,na.rm=T),scientific=TRUE,digits=3)
         #neighbor.actual.98 <- format(quantile(mcresults$neighbor.actual,0.98,na.rm=T), scientific=TRUE,digits=3)
         #neighbor.actual.mean <- format(mean(mcresults$neighbor.actual,na.rm=T),scientific=TRUE,digits=3)
@@ -13,5 +13,5 @@ runMCodds <- function(value) {
         random.actual.median <- format(random.actual.median,digits=3)
         neighbor.better.median <- format(neighbor.better.median,digits=3)
         odds.ratio <- format(odds.ratio, digits=5)
-        mcOutput <- data.frame(value, neighbor.actual.median, random.actual.median, neighbor.better.median,total.counties,odds.ratio )
+        mcOutput <- data.frame(values, neighbor.actual.median, random.actual.median, neighbor.better.median,total.counties,odds.ratio )
         }
